@@ -1,0 +1,104 @@
+#content{
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+#block{
+  height: 60px;
+  border: dashed grey 0.5px;
+  border-color: rgba(80, 80, 80, 0.2);
+  z-index: 1;
+}
+
+#canvas{
+  flex-grow: 5;
+  flex-shrink: 0.2;
+  /*z-index: 4;*/
+}
+
+#toolBar{
+  /*border: solid red 1px;*/
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.5;
+  flex-shrink: 0.8; justify-content: space-evenly;
+  align-items: center;
+  background-color: #282532;
+}
+
+#toolBar #color{
+  border-radius: 8px;
+  border-style: none;
+  border: solid rgba(120, 120, 120, 0.5) 1px;
+  font-size: 16px;
+  text-align: center;
+  padding: 4px 12px 6px 12px;
+  height: 5%;
+  width: 60%;
+  max-width: 50px;
+}
+
+#toolBar #activeColor{
+  border-radius: 8px;
+  border-style: none;
+  border: solid darkorchid 3px;
+  font-size: 16px;
+  text-align: center;
+  padding: 4px 12px 6px 12px;
+  height: 5%;
+  width: 60%;
+  max-width: 50px;
+}
+
+#toolBar #clear{
+  background-color: #EEE;
+  border-radius: 4px;
+  width: 100%;
+  padding: 6px 0 8px 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#size-setting,#background-setting{
+  display: flex;  
+  gap: 8px;
+  justify-content: center;
+}
+
+#canvas-setting{
+  display: flex;
+  flex-direction: column;
+  padding:  12px 0 12px 0;
+  background-color: rosybrown;
+  width:  100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#sizeButton{
+  border-radius: 6px;
+  border-style: none;
+  border: solid rgba(120, 120, 120, 0.5) 1px;
+}
+
+#backgroundColorButton{
+  padding: 9px 16px 9px 16px;
+  border-style: none;
+  border-radius: 6px;
+}
+
+#rainbowButton{
+  border-radius: 4px;
+  border-style: 0;
+  border: solid rgba(120, 120, 120, 0.5) 1px;
+  padding: 6px 4px 8px 4px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+body{
+  /*border: solid green 5px;*/
+  height: 100vh;
+  background-color: #383348;
+}
